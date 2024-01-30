@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pickleball Community</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="header-container">
+        <h1>Pickleball Community</h1>
+    </div>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="news.html">News</a>
+        <a href="stats.html">Stats</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <div class="news-container">
+
+        <div class="top-section">
+            <!-- Add your images here -->
+            <img src="image1.jpg" alt="Image 1">
+            <img src="image2.jpg" alt="Image 2">
+            <img src="image3.jpg" alt="Image 3">
+            <img src="image4.jpg" alt="Image 4">
+        </div>
+
+        <div class="bottom-section">
+            <div class="events-subheading">Events</div>
+            <!-- Add content for the events section here -->
+            <div class="scroll-buttons" onclick="scrollLeft()">&#9665;</div>
+            <!-- Add your scrollable content here -->
+            <div id="scrollable-content">
+                <p>Event 1</p>
+                <p>Event 2</p>
+                <p>Event 3</p>
+                <!-- Add more events as needed -->
+            </div>
+            <div class="scroll-buttons" onclick="scrollRight()">&#9655;</div>
+        </div>
+
+    </div>
+
+    <div class="contact-section">
+      <div class="contact-info">
+          <h2>Contact Us</h2>
+          <p>Phone: +1 (123) 456-7890</p>
+          <p>Email: info@example.com</p>
+          <p>Address: 123 Street, City, Country</p>
+      </div>
+      <div class="logo-section">
+          <img src="logo.png" alt="Logo">
+          <h2>Your Website</h2>
+      </div>
+    </div>
+
+    <script>
+        // JavaScript functions for scrolling content (you can customize this based on your needs)
+        function scrollLeft() {
+            document.getElementById('scrollable-content').scrollLeft -= 50;
+        }
+
+        function scrollRight() {
+            document.getElementById('scrollable-content').scrollLeft += 50;
+        }
+    </script>
+
+</body>
+</html>

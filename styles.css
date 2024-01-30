@@ -1,0 +1,149 @@
+/* styles.css */
+
+/*
+  WEBSITE NAME/LOGO AND TOP NAVIGATION BAR
+*/
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header-container {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.navbar {
+  background-color: #444;
+  overflow: hidden;
+  text-align: center; /* Center-align the navbar */
+}
+
+.navbar a {
+  display: inline-block; /* Make the navbar links inline blocks */
+  color: #fff;
+  text-align: center;
+  padding: 14px 24px; /* Increase padding for wider buttons */
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/*  
+  CONTACT BOTTOM SECTION
+*/
+
+.contact-section {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact-info {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.contact-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.logo-section {
+  flex: 1;
+  text-align: center;
+}
+
+.logo-section img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.logo-section h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+/*
+  NEWS PAGE SPECIFICS
+*/
+
+.news-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.top-section {
+  width: 80%;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.top-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.top-section img:hover {
+  transform: scale(1.05);
+}
+
+.bottom-section {
+  width: 80%;
+  margin-top: 20px;
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.events-subheading {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.scroll-buttons {
+  font-size: 24px;
+  cursor: pointer;
+  margin: 0 10px;
+  color: #333;
+}
+
+#scrollable-content {
+  display: flex;
+  overflow-x: auto;
+  margin-bottom: 10px;
+}
+
+#scrollable-content p {
+  min-width: 150px;
+  padding: 10px;
+  margin: 0;
+  border-radius: 8px;
+  background-color: #ddd;
+  margin-right: 10px;
+}
