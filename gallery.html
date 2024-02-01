@@ -9,5 +9,86 @@
 </head>
 <body>
 
+    <div class="header-container">
+        <h1>Pickleball Community</h1>
+    </div>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="news.html">News</a>
+        <a href="stats.html">Stats</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <div class="gallery">
+        <div class="photo" onclick="showPopup('Photo 1', '2024-02-01')">
+          <img src="photo1.jpg" alt="Photo 1">
+          <div class="overlay">Hover to view date and time</div>
+        </div>
+        <div class="photo" onclick="showPopup('Photo 2', '2024-02-02')">
+          <img src="photo2.jpg" alt="Photo 2">
+          <div class="overlay">Hover to view date and time</div>
+        </div>
+        <div class="photo" onclick="showPopup('Photo 3', '2024-02-04')">
+            <img src="photo3.jpg" alt="Photo 3">
+            <div class="overlay">Hover to view date and time</div>
+          </div>
+          <div class="photo" onclick="showPopup('Photo 4', '2024-02-03')">
+            <img src="photo4.jpg" alt="Photo 4">
+            <div class="overlay">Hover to view date and time</div>
+          </div>
+          <div class="photo" onclick="showPopup('Photo 5', '2024-02-03')">
+            <img src="photo5.jpg" alt="Photo 5">
+            <div class="overlay">Hover to view date and time</div>
+          </div>
+          <div class="photo" onclick="showPopup('Photo 6', '2024-02-03')">
+            <img src="photo6.jpg" alt="Photo 6">
+            <div class="overlay">Hover to view date and time</div>
+          </div>
+          <div class="photo" onclick="showPopup('Photo 7', '2024-02-03')">
+            <img src="photo7.jpg" alt="Photo 7">
+            <div class="overlay">Hover to view date and time</div>
+          </div>
+        <!-- Add more photos as needed -->
+      </div>
+    
+      <div class="popup" id="popup">
+        <span class="close-btn" onclick="closePopup()">&#10006;</span>
+        <img id="popup-image" src="" alt="Popup Image">
+        <div id="popup-info"></div>
+      </div>
+
+    <div class="contact-section">
+      <div class="contact-info">
+          <h2>Contact Us</h2>
+          <p>Phone: +1 (123) 456-7890</p>
+          <p>Email: info@example.com</p>
+          <p>Address: 123 Street, City, Country</p>
+      </div>
+      <div class="logo-section">
+          <img src="logo.png" alt="Logo">
+          <h2>Your Website</h2>
+      </div>
+    </div>
+    
+      <script>
+        function showPopup(title, date) {
+          const popup = document.getElementById('popup');
+          const popupImage = document.getElementById('popup-image');
+          const popupInfo = document.getElementById('popup-info');
+    
+          popupImage.src = 'photo1.jpg'; // Set the source of the clicked photo
+          popupInfo.innerHTML = `<h2>${title}</h2><p>Date and Time: ${date}</p>`;
+          popup.style.display = 'flex';
+        }
+    
+        function closePopup() {
+          const popup = document.getElementById('popup');
+          popup.style.display = 'none';
+        }
+      </script>
+    
+
 </body>
 </html>
